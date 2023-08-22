@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="images/tesla-badge.png" width="100px" height="100px" class="logo">
+            <ul>
+                <li><a href="#" id="models" >Model S</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modelx">Model x</a></li>
+                <li><a href="#" id="modely">Model y</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="speed">1.9s</h2>
+                <p>60mph</p>
+            </div>
+            <div>
+                <h2 id="topspeed">200mph</h2>
+                <p>top speed</p>
+            </div>
+            <div>
+                <h2 id="maxrange">398mi</h2>
+                <p>max range</p>
+            </div>
+            <div class="line">
+
+            </div>
+            <div>
+                <h2 id="model">Model s</h2>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var header =document.getElementById("header");
+        var ms =document.getElementById("models");
+        var m3 =document.getElementById("model3");
+        var  mx =document.getElementById("modelx");
+        var my=document.getElementById("modely");
+        var model=document.getElementById("model");
+        var speed=document.getElementById("speed");
+        var topspeed=document.getElementById("topspeed");
+        var maxrange=document.getElementById("maxrange");
+
+        ms.onclick = function(){
+            header.style.backgroundImage="url(images/654321.avif)";
+            model.innerHTML="Model s";
+            speed.innerHTML="60mph";
+            topspeed.innerHTML="200mph";
+            maxrange.innerHTML="398mi";
+        }
+
+        m3.onclick = function(){
+            header.style.backgroundImage="url(images/1130968.webp)";
+            model.innerHTML="Model 3";
+            speed.innerHTML="70mph";
+            topspeed.innerHTML="220mph";
+            maxrange.innerHTML="388mi";
+        }
+
+        mx.onclick = function(){
+            header.style.backgroundImage="url(images/17241724.jpeg)";
+            model.innerHTML="Model x";
+            speed.innerHTML="76mph";
+            topspeed.innerHTML="260mph";
+            maxrange.innerHTML="399mi";
+        }
+
+        my.onclick = function(){
+            header.style.backgroundImage="url(images/24242424.jpeg)";
+            model.innerHTML="Model y"
+            speed.innerHTML="80mph";
+            topspeed.innerHTML="300mph";
+            maxrange.innerHTML="399mi";
+        }
+
+    </script>
+    
+</body>
+</html>
